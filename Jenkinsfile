@@ -3,7 +3,7 @@ pipeline {
 		agent {
 		       label {
 			            label "master"
-						customWorkspace "/mnt/slave-1"
+						customWorkspace "/mnt/clone-1"
 				}
 		}		
 		
@@ -22,7 +22,7 @@ pipeline {
 			agent {
 			    label {
 				        label "dev"
-						customWorkspace "/mnt/sl2"
+						customWorkspace "/mnt/clone-2"
 				}
 			}	
 				
@@ -39,7 +39,7 @@ pipeline {
 			agent {
 			    label {
 				        label "qa"
-						customWorkspace "/mnt/slave-3"
+						customWorkspace "/mnt/clone-3"
 				}
 			}	
 			
